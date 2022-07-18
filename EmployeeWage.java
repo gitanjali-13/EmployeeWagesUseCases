@@ -1,18 +1,27 @@
 package com.bridgelabz.empwage;
-
-public class EmployeeWage {
 	
-	public static void main(String args[]) {
+public class EmployeeWage {
 		
-		System.out.println("Welcome to Employee Attendance");
-		int Attendance=1; 
-		double randomCheck= (Math.floor(Math.random()*10))%2;
-		if (Attendance==randomCheck) 
-		{
-			System.out.println("Employee is present");
-			} else 
-			{
-				System.out.println("Employee is absent");
-			}
+	public static void main(String args[]) {
+		System.out.println ("Welcome to Employee Attendance");
+		int noOfhourperday = 8;
+		int Wageperhr = 20;
+	 
+	  int Attendance=1; 
+	  double randomCheck= (Math.floor(Math.random()*10)) %2;
+	  
+	  if (Attendance == randomCheck) {  
+		  if(noOfhourperday == 8) {
+		  System.out.println("Employee is present");
+		  int totalWage = noOfhourperday * Wageperhr;
+		  System.out.println("wage per day is:" + totalWage);
+		  
+		  }  
+	  } 
+		  
+	   else {
+		   		System.out.println(" Employee is Absent");
+	   		}
+	
 		}
 	}
